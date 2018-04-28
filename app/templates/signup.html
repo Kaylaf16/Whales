@@ -12,10 +12,11 @@
   <div class="login-page">
     <div class="form">
 <i class="ion-person" ></i>
-      <form class="login-form">
-        <input type="text" placeholder="username"/>
-        <input type="password" placeholder="password"/>
-        <input type="text" placeholder="email address"/>
+      <form class="login-form" action="/signup" method="POST">
+        <input type="text" id="username"placeholder="username" name="username"required/>
+        <input type="password" id="password"placeholder="password" name ="password"required/>
+        <input type="text" id="name"placeholder ="name" name="name"required/>
+        <input type="text" id="skill"placeholder ="skill"name ="skill"required/>
         <button>create</button>
         <p class="message">Already registered? <a href="/signin">Sign In</a></p>
       </form>

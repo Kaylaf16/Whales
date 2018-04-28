@@ -13,10 +13,10 @@
 
     <div class="form">
 <i class="ion-person" ></i>
-      <form class="login-form">
+      <form class="login-form"action="/signin" method="POST">
 
-        <input type="text" placeholder="username"/>
-        <input type="password" placeholder="password"/>
+        <input type="text" id="username"placeholder="username"name="username" required/>
+        <input type="password" id="password"placeholder="password"name="password" required/>
         <button>login</button>
         <p class="message">Not registered? <a href="/signup">Create an account</a></p>
       </form>
