@@ -1,4 +1,65 @@
+body{
+  margin:0;
+  padding:0;
+}
 .LandingHome{
    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('../img/HomeBackground.jpg');
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   height:100%;
+   text-align: center
+}
+.heading{
+color:white;
+font-size: 54px;
+letter-spacing: 4px;
+font-family: 'avenir next';
+font-weight: 100;
+text-align: center;
+padding-bottom: 0px;
+margin-bottom: 5px;
+padding-top:80px;
+}
 
+
+a{
+  text-decoration: none;
+  color:white;
+
+}
+
+a:hover{
+  font-weight: 300;
+  color:black;
+  color:white;
+}
+.signup{
+  height:40px;
+  width:190px;
+  font-size: 18px;
+  background-color: #03A678;
+
+  border:none;
+  font-weight: 200;
+  margin:30px;
+}
+.signin:hover{
+  background-color:black;
+}
+.signup:hover{
+  background-color:black;
+}
+.subheading{
+color: black;
+font-size: 18px;
+font-weight: bolder;
+font-family: 'Oswald', sans-serif;
+}
+.subheading2{
+color: black;
+font-size: 18px;
+letter-spacing: 4px;
+font-weight: 400;
+font-family: 'Oswald', sans-serif;
 }

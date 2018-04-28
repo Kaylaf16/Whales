@@ -1,13 +1,21 @@
+
 <html>
 <head>
   <title>NYConnect</title>
   <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/Landingpage.css') }}">
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/signup.css') }}">
+<link rel="stylesheet" type="text/css"  href= "{{ url_for('static',filename='css/ionicons.css') }}"/>
+<link href="https://fonts.googleapis.com/css?family=Do+Hyeon|Oswald" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 </head>
 <body>
   <div class ="LandingHome">
-    <p>NYCONNECT</p>
-    <button><a href="/signup"></a></button>
-    <button><a href="/signin"></a></button>
+    <div class ="LandingHome">
+      <p class = "heading">Connect. Learn & Prosper<br>Your tool to succeed</p>
+      <p class = "subheading">A SOCIAL LEARNING TOOL</p>
+      <p class ="subheading2">NYConnect</p>
+      <button class = "signup"><a href="/signup">Get Started</a></button>
+    </div>
   </div>
 </body>
 </html>

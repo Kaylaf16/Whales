@@ -1,0 +1,26 @@
+
+<html>
+<head>
+  <title>NYConnect</title>
+
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/signup.css') }}">
+<link rel="stylesheet" type="text/css"  href= "{{ url_for('static',filename='css/ionicons.css') }}"/>
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+</head>
+<body>
+  <Center><p  class ="signUpInHeader">Sign Up</p></center>
+  <div class="login-page">
+    <div class="form">
+<i class="ion-person" ></i>
+      <form class="login-form">
+        <input type="text" placeholder="username"/>
+        <input type="password" placeholder="password"/>
+        <input type="text" placeholder="email address"/>
+        <button>create</button>
+        <p class="message">Already registered? <a href="/signin">Sign In</a></p>
+      </form>
+    </div>
+    <center>  <p class ="subheading3">NYConnect</p></center>
+  </div>
+</body>
+</html>
