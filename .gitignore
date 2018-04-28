@@ -76,6 +76,9 @@ target/
 # pyenv
 .python-version
 
+# Cypython files
+*.cpython-36.pyc
+
 # celery beat schedule file
 celerybeat-schedule
 
