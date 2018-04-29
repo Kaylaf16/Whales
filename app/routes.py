@@ -19,8 +19,7 @@ def getskills():
     skills =[]
     for skill in rawskills:
         skills.append(skill.skill)
-    print(skills)
-    return "good"
+    return skills
 
 @app.route('/')
 def index():
