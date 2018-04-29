@@ -1,10 +1,11 @@
 from flask import render_template
 from flask import request, abort,jsonify, redirect,url_for
 import requests
+from sqlalchemy.orm import load_only
 from app import app,db
 from flask_login import login_required
 from flask_login import current_user, login_user
-from app.models import Users
+from app.models import Users,Skills
 
 import json
 import plotly
@@ -12,6 +13,14 @@ import pandas as pd
 import numpy as np
 
 app.debug = True
+@app.route('/getallskills')
+def getskills():
+    rawskills = Skills.query.options(load_only('skill')).all()
+    skills =[]
+    for skill in rawskills:
+        skills.append(skill.skill)
+    print(skills)
+    return "good"
 
 @app.route('/')
 def index():

@@ -2,7 +2,29 @@
 <html>
 <head>
   <title>NYConnect</title>
+  <Script>
+    function Toggle(){
+    // import jquery & ajax & also create a route for generating all rows in skills table
+    document.getElementById("myDropdown").classList.toggle("show")
+    //var dropdown = document.getElementById("myDropdown")
+    //$.get("routetogetfrom",function(data,status){
+   //check status
+      /*for(var i=0;i<data.length;i++)
+        {
+          var a = document.createElement('a');
+          var aText = document.createTextNode(data[i])
+          a.appendChild(aText)
+          a.onClick="addFunction(this)"
 
+
+        }*/
+    }//)
+
+//    document.getElementById("myDropdown").classList.toggle("show")
+
+//  }
+
+</script>
 <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/signup.css') }}">
 <link rel="stylesheet" type="text/css"  href= "{{ url_for('static',filename='css/ionicons.css') }}"/>
 <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
@@ -16,8 +38,12 @@
         <input type="text" id="username"placeholder="username" name="username"required/>
         <input type="password" id="password"placeholder="password" name ="password"required/>
         <input type="text" id="name"placeholder ="name" name="name"required/>
-        <input type="text" id="skill"placeholder ="skill"name ="skill"required onchange="toggle()"/>
-        <button>create</button>
+        <div id ="addedItems"></div>
+          <button onclick="Toggle()" class="dropbtn">Add Skill</button>
+          <div id="myDropdown" class="dropdown-content">
+          <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+        </div>
+        <button id="buttonid" >create</button>
         <p class="message">Already registered? <a href="/signin">Sign In</a></p>
       </form>
     </div>
