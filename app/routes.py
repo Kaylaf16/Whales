@@ -1,5 +1,5 @@
 from flask import render_template
-from flask import request, abort,jsonify
+from flask import request, abort,jsonify, redirect,url_for
 import requests
 from app import app,db
 from flask_login import login_required
@@ -53,7 +53,7 @@ def signin():
              print('Invalid username or password')
              return render_template('signin.html')
          #return render_template('home.html')
-         return render_template('signup.html')
+         return redirect(url_for('skillmap'))
      elif request.method=='GET':
         return render_template('signin.html')
 
